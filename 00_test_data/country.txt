@@ -1,0 +1,57 @@
+# Worldwide country codes
+https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes
+
+# Canada state codes
+https://en.wikipedia.org/wiki/ISO_3166-2:CA
+
+# Mexico state codes
+https://en.wikipedia.org/wiki/ISO_3166-2:MX
+
+# United States state codes
+https://en.wikipedia.org/wiki/ISO_3166-2:US
+
+
+db.countries.insertMany([
+    {
+        name: "Canada",
+        code: "CA",
+        state: [
+            {
+                name: "Ontario",
+                code: "ON",
+            },
+            {
+                name: "Quebec",
+                code: "QC",
+            },
+        ]
+    },
+    {  
+        name: "Mexico",
+        code: "MX",
+        state: [
+            {
+                name: "Guerrero",
+                code: "GRO",
+            },
+            {
+                name: "Mexico City",
+                code: "CMX",
+            }
+        ]
+    },
+    {
+        name: "United States",
+        code: "US",
+        state: [
+            {
+                name: "Florida",
+                code: "FL",
+            },
+            {
+                name: "Texas",
+                code: "TX",
+            }
+        ]
+    },
+])

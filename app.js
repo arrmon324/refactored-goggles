@@ -13,6 +13,9 @@ dotenv.config();
 // Connect to database
 connectDB();
 
+// Express body parser
+app.use(express.urlencoded({ extended: false }));
+
 // EJS
 app.set("view engine", "ejs");
 app.set("views", [path.join(__dirname, "views")]);

@@ -1,5 +1,5 @@
 <main>
-  <form action="/" method="POST">
+  <form action="/addInfo" method="POST">
     <h1 class="h4 mt-4 mb-4">Please fill in all fields</h1>
     <div class="mb-3">
       <label for="formControlInputFirstName" class="form-label"
@@ -7,8 +7,8 @@
       >
       <input
         type="text"
-        id="first-name"
-        name="first-name"
+        id="firstName"
+        name="firstName"
         class="form-control"
         placeholder=""
         required
@@ -19,8 +19,8 @@
       <label for="formControlInputLastName" class="form-label">Last name</label>
       <input
         type="text"
-        id="last-name"
-        name="last-name"
+        id="lastName"
+        name="lastName"
         class="form-control"
         placeholder=""
         required
@@ -28,7 +28,7 @@
     </div>
     <div class="mb-3">
       <label for="formControlInputGender" class="form-label">Gender</label>
-      <select class="form-select">
+      <select class="form-select" type="text" id="gender" name="gender">
         <option value="female">Female</option>
         <option value="male">Male</option>
       </select>
@@ -39,8 +39,8 @@
       >
       <input
         type="date"
-        id="birth-date"
-        name="birth-date"
+        id="birthDate"
+        name="birthDate"
         class="form-control"
         placeholder=""
         required
@@ -53,8 +53,8 @@
       >
       <input
         type="date"
-        id="date-of-test"
-        name="date-of-test"
+        id="dateOfTest"
+        name="dateOfTest"
         class="form-control"
         placeholder=""
         required
@@ -66,13 +66,13 @@
       >
       <input
         type="date"
-        id="date-of-result"
-        name="date-of-result"
+        id="dateOfResult"
+        name="dateOfResult"
         class="form-control"
         placeholder=""
         required
       />
     </div>
-    <button class="mt-4 w-100 btn btn-dark btn-lg" type="submit">Submit</button>
+    <button class="mt-4 w-100 btn btn-dark" type="submit">Submit</button>
   </form>
 </main>

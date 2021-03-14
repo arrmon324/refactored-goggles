@@ -1,0 +1,14 @@
+<main>
+  <form action="/addCountry" method="POST">
+    <h1 class="h4 mt-4 mb-4">Please select your country</h1>
+    <div class="mb-3">
+      <label for="formControlInputCountry" class="form-label">Country</label>
+      <select class="form-select" type="text" id="country" name="country">
+        <% countries.forEach(function(country) { %>
+        <option value="<%- country.code %>"><%- country.name %></option>
+        <% }); %>
+      </select>
+    </div>
+    <button class="mt-4 w-100 btn btn-dark" type="submit">Next</button>
+  </form>
+</main>
