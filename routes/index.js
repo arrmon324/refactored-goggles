@@ -15,6 +15,12 @@ router.get("/", (req, res) => {
 router.get("/addCountry", async (req, res) => {
   try {
     const countries = await Country.find();
+    let states = [];
+    countries.forEach((c) => {
+      states = [...states, ...c.state];
+    });
+    console.log(states);
+    // console.log(countries);
     res.render("formCountry", {
       layout: "layouts/main",
       countries,
