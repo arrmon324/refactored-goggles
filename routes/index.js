@@ -20,7 +20,7 @@ router.get("/addCountry", async (req, res) => {
       states = [...states, ...c.state];
     });
     console.log(states);
-    // console.log(countries);
+    console.log(countries);
     res.render("formCountry", {
       layout: "layouts/main",
       countries,
